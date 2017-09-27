@@ -27,12 +27,15 @@ gebruikte_letters = ""
 
 while True:
     letter = input("type een letter ")
+    lengte = len(letter)
     print("deze letters heb je gebruikt: " + gebruikte_letters)
-    if letter == "?":
+    if (lengte >= 2):
+        print("Oeps het letter is lang")
+    elif letter == "?":
          raad = input("probeer het woord te raden dan: ")
          if raad == woord:
-             print("je hebt het woord geraden")
-             break
+            print("je hebt het woord geraden")
+            break
          else:
              print("test")
              counter += 1
