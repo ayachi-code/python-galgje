@@ -31,13 +31,16 @@ while True:
     print("deze letters heb je gebruikt: " + gebruikte_letters)
     if lengte >= 2:
         print("Oeps het letter is lang")
+    elif counter == 6:
+        print("Oooh je manetje is om het leven de woord was bilal : )))")
+        break
     elif letter == "?":
          raad = input("probeer het woord te raden dan: ")
          if raad == woord:
             print("je hebt het woord geraden")
             break
          else:
-             print("test")
+             print("fout je hebt het woord niet geraden")
              counter += 1
              check()
     elif letter in woord:
