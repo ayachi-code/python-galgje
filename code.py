@@ -23,6 +23,7 @@ def check():
 woord = "bilal"
 counter = 0
 gebruikte_letters = ""
+goed = ""
 
 
 while True:
@@ -46,6 +47,11 @@ while True:
     elif letter in woord:
         gebruikte_letters = gebruikte_letters + "," + letter
         print("goed zo de " + letter + " zit in het woord")
+        goed += letter
+        print(goed)
+        if goed == woord:
+            print("hoera je hebt het woord geraden")
+            break
     else:
         gebruikte_letters = gebruikte_letters + "," + letter
         print("Jammer de letter " + letter + " zit niet in het woord" )
